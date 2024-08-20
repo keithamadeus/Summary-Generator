@@ -11,6 +11,7 @@ let model: OpenAI;
 
 if (apiKey) {
   // TODO: Initialize the OpenAI model if the API key is provided
+  model = new OpenAI(apiKey: any);
 } else {
   console.error('OPENAI_API_KEY is not configured.');
 }
